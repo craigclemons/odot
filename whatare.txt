@@ -1,0 +1,54 @@
+FFFFF
+
+Failures:
+
+  1) Editing todo lists displays an error with too short a title
+     Failure/Error: visit "todo_list"
+     URI::InvalidURIError:
+       the scheme http does not accept registry part: www.example.com:80todo_list (or bad hostname?)
+     # ./spec/features/todo_lists/edit_spec.rb:12:in `update_todo_list'
+     # ./spec/features/todo_lists/edit_spec.rb:35:in `block (2 levels) in <top (required)>'
+
+  2) Editing todo lists updates a todo list succesfully with the correct information
+     Failure/Error: visit "todo_list"
+     URI::InvalidURIError:
+       the scheme http does not accept registry part: www.example.com:80todo_list (or bad hostname?)
+     # ./spec/features/todo_lists/edit_spec.rb:12:in `update_todo_list'
+     # ./spec/features/todo_lists/edit_spec.rb:21:in `block (2 levels) in <top (required)>'
+
+  3) Editing todo lists displays an error with too short a description
+     Failure/Error: visit "todo_list"
+     URI::InvalidURIError:
+       the scheme http does not accept registry part: www.example.com:80todo_list (or bad hostname?)
+     # ./spec/features/todo_lists/edit_spec.rb:12:in `update_todo_list'
+     # ./spec/features/todo_lists/edit_spec.rb:43:in `block (2 levels) in <top (required)>'
+
+  4) Editing todo lists displays an error with no description
+     Failure/Error: visit "todo_list"
+     URI::InvalidURIError:
+       the scheme http does not accept registry part: www.example.com:80todo_list (or bad hostname?)
+     # ./spec/features/todo_lists/edit_spec.rb:12:in `update_todo_list'
+     # ./spec/features/todo_lists/edit_spec.rb:39:in `block (2 levels) in <top (required)>'
+
+  5) Editing todo lists displays an error with no title
+     Failure/Error: visit "todo_list"
+     URI::InvalidURIError:
+       the scheme http does not accept registry part: www.example.com:80todo_list (or bad hostname?)
+     # ./spec/features/todo_lists/edit_spec.rb:12:in `update_todo_list'
+     # ./spec/features/todo_lists/edit_spec.rb:28:in `block (2 levels) in <top (required)>'
+
+2 deprecation warnings total
+
+Finished in 0.04072 seconds
+5 examples, 5 failures
+
+Failed examples:
+
+rspec ./spec/features/todo_lists/edit_spec.rb:34 # Editing todo lists displays an error with too short a title
+rspec ./spec/features/todo_lists/edit_spec.rb:20 # Editing todo lists updates a todo list succesfully with the correct information
+rspec ./spec/features/todo_lists/edit_spec.rb:42 # Editing todo lists displays an error with too short a description
+rspec ./spec/features/todo_lists/edit_spec.rb:38 # Editing todo lists displays an error with no description
+rspec ./spec/features/todo_lists/edit_spec.rb:27 # Editing todo lists displays an error with no title
+
+Randomized with seed 22299
+
