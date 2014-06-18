@@ -29,6 +29,8 @@ gem 'spring',        group: :development
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+gem 'shoulda-matchers' , "~>2.6.0"
+
 # Use unicorn as the app server
 # gem 'unicorn'
 
